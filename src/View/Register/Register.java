@@ -224,7 +224,7 @@ public class Register extends javax.swing.JFrame {
 
     private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerButtonActionPerformed
         // TODO add your handling code here:
-       String nama = namaField.getText();
+    String nama = namaField.getText();
     String username = usernameField.getText();
     String noHp = noHpField.getText();
     String alamat = alamatField.getText();
