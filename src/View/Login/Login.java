@@ -124,10 +124,12 @@ public class Login extends javax.swing.JFrame {
             if (res.next()) {
                 JOptionPane.showMessageDialog(null, "Welcome! " + res.getString(2));
                 // Simpan username pengguna yang berhasil login
+                String id_user = res.getString("id_user");
                 Authentication.setLoggedInUsername(username);
+                Authentication.setLoggedInUserId(id_user);
                 // Pindah ke halaman profil
                 MainPage mp = new MainPage();
-                mp.display();
+                mp.setVisible(true);
                 dispose();
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Login");
