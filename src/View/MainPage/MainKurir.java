@@ -7,12 +7,14 @@ package View.MainPage;
 
 import View.KurirPage.LihatPesanan;
 
+import java.sql.*;
+
 /**
  *
  * @author MARJAUZA
  */
 public class MainKurir extends javax.swing.JFrame {
-
+    Connection conn;
     /**
      * Creates new form MainKurir
      */

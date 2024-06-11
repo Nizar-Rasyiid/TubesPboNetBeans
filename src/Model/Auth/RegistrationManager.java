@@ -1,4 +1,5 @@
 package Model.Auth;
+import JDBC.sqlconnection;
 import Model.Users.User;
 
 import java.sql.Connection;
@@ -8,20 +9,24 @@ import java.sql.SQLException;
 public class RegistrationManager {
     private Connection connection;
 
-    public RegistrationManager(Connection connection) {
-        this.connection = connection;
-    }
 
-    public void registerUser(User user) throws SQLException {
-        String sql = "INSERT INTO users (id, name, address, phone, role) VALUES (?, ?, ?, ?, ?)";
-        try (PreparedStatement statement = connection.prepareStatement(sql)) {
-            statement.setInt(1, user.getIdUser());
-            statement.setString(2, user.getNama());
-            statement.setString(3, user.getAlamat());
-            statement.setString(4, user.getNoHp());
-            statement.setString(5, user.getRole());
+    public boolean registerUser(User user) {
+        String insertQuery = "INSERT INTO user (nama, alamat, no_hp, username, role, password) VALUES (?, ?, ?, ?, ?, ?)";
+        try (Connection conn = sqlconnection.connectdb();
+             PreparedStatement pst = conn.prepareStatement(insertQuery)) {
 
-            statement.executeUpdate();
+            pst.setString(1, user.getNama());
+            pst.setString(2, user.getAlamat());
+            pst.setString(3, user.getNoHp());
+            pst.setString(4, user.getUsername());
+            pst.setString(5, user.getRole());
+            pst.setString(6, user.getPassword());
+
+            int rowsAffected = pst.executeUpdate();
+            return rowsAffected > 0;
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+            return false;
         }
     }
 }

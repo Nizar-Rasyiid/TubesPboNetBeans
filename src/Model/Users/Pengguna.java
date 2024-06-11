@@ -2,8 +2,8 @@ package Model.Users;
 
 public class Pengguna extends User{
     private int idPengguna;
-    public Pengguna(int idPengguna,int idUser, String nama, String alamat, String noHp, String role) {
-        super(idUser, nama, alamat, noHp, role );
+    public Pengguna(String nama,String alamat,String noHp,String username,String password,String role) {
+        super(nama, alamat, noHp, username, password, role);
         this.idPengguna = idPengguna;
     }
 }

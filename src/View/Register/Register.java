@@ -6,6 +6,8 @@
 package View.Register;
 
 import View.Login.Login;
+
+import java.awt.event.ActionListener;
 import java.sql.*;
 import JDBC.sqlconnection;
 import java.util.logging.Level;
@@ -277,7 +279,20 @@ public class Register extends javax.swing.JFrame {
             Logger.getLogger(Register.class.getName()).log(Level.SEVERE, null, ex);
         }      
     }//GEN-LAST:event_registerButtonActionPerformed
+    public String getNama() { return namaField.getText(); }
+    public String getAlamat() { return alamatField.getText(); }
+    public String getNoHp() { return noHpField.getText(); }
+    public String getUsername() { return usernameField.getText(); }
+    public String getPassword() { return new String(passwordField.getPassword()); }
+    public String getRole() { return comboBoxRole.getSelectedItem().toString(); }
 
+    public void addRegisterListener(ActionListener listener) {
+        registerButton.addActionListener(listener);
+    }
+
+    public void addLoginListener(ActionListener listener) {
+        loginButton.addActionListener(listener);
+    }
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
         // TODO add your handling code here:
         loginButton.addActionListener(e -> {
@@ -286,7 +301,9 @@ public class Register extends javax.swing.JFrame {
             this.dispose();
         });
     }//GEN-LAST:event_loginButtonActionPerformed
-
+    public void showMessage(String message) {
+        JOptionPane.showMessageDialog(this, message);
+    }
     private void loginButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginButtonMouseClicked
         // TODO add your handling code here:
         Login lg = new Login();
@@ -346,5 +363,6 @@ public class Register extends javax.swing.JFrame {
     private javax.swing.JPasswordField passwordField;
     private javax.swing.JButton registerButton;
     private javax.swing.JTextField usernameField;
+
     // End of variables declaration//GEN-END:variables
 }
