@@ -13,7 +13,7 @@ import java.util.logging.Logger;
 import JDBC.sqlconnection;
 
 public class PesananController {
-    private Pesanan view;
+    private final Pesanan view;
 
     public PesananController(Pesanan view) {
         this.view = view;
@@ -28,15 +28,22 @@ public class PesananController {
 
         double harga = 0;
         String jarak = view.getJarak();
-        if ("1-2km".equals(jarak)) {
-            harga = 8000;
-        } else if ("2-5km".equals(jarak)) {
-            harga = 12000;
-        } else if (">5km".equals(jarak)) {
-            harga = 25000;
-        } else {
+        if (null == jarak) {
             JOptionPane.showMessageDialog(view, "Opsi tidak valid.");
             return;
+        } else switch (jarak) {
+            case "1-2km":
+                harga = 8000;
+                break;
+            case "2-5km":
+                harga = 12000;
+                break;
+            case ">5km":
+                harga = 25000;
+                break;
+            default:
+                JOptionPane.showMessageDialog(view, "Opsi tidak valid.");
+                return;
         }
 
         String titikJemput = view.getTitikJemput();

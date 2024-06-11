@@ -8,8 +8,8 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 
 public class PaymentController {
-    private Payment view;
-    private PesananModel pesananModel;
+    private final Payment view;
+    private final PesananModel pesananModel;
     private PaymentMethod paymentMethod;
 
     public PaymentController(Payment view, PesananModel pesananModel) {

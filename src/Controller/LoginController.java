@@ -5,7 +5,7 @@ import Model.Auth.LoginService;
 import java.sql.Connection;
 
 public class LoginController {
-    private LoginService loginService;
+    private final LoginService loginService;
 
     public LoginController(Connection connection, String username, String password) {
         this.loginService = new LoginService(connection, username, password);

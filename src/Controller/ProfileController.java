@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class ProfileController {
-    private Connection conn;
+    private final Connection conn;
 
     public ProfileController() {
         conn = sqlconnection.connectdb();

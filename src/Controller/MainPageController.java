@@ -13,7 +13,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class MainPageController {
-    private MainPage mainPage;
+    private final MainPage mainPage;
 
     public  MainPageController(MainPage mainPage){
         this.mainPage = mainPage;
