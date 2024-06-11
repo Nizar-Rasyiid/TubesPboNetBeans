@@ -14,14 +14,18 @@ public class LoginService extends Login {
 
     @Override
     public boolean Authenticate() {
-        String query = "SELECT COUNT(*) AS count FROM users WHERE username = ? AND password = ?";
+        String query = "SELECT id_user, role FROM user WHERE username = ? AND password = ?";
         try (PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setString(1, getUsername());
             statement.setString(2, getPassword());
             ResultSet resultSet = statement.executeQuery();
             if (resultSet.next()) {
-                int count = resultSet.getInt("count");
-                return count > 0;
+                String id_user = resultSet.getString("id_user");
+                String role = resultSet.getString("role");
+                Authentication.setLoggedInUserId(id_user);
+                Authentication.setLoggedInUsername(getUsername());
+                Authentication.setLoggedInUserRole(role);
+                return true;
             }
         } catch (SQLException e) {
             e.printStackTrace();

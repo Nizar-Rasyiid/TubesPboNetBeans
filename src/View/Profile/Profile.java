@@ -26,7 +26,7 @@ public class Profile extends javax.swing.JFrame {
     private String alamat;
     private String noHp;
     private String password;
-    
+
     Connection conn = sqlconnection.connectdb();
     /**
      * Creates new form Profile
@@ -132,78 +132,78 @@ public class Profile extends javax.swing.JFrame {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGap(175, 175, 175)
-                        .addComponent(jLabel1))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGap(49, 49, 49)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5)
-                            .addComponent(backButton))
-                        .addGap(28, 28, 28)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(alamatLabel)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(editAlamat))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(labelNama)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
-                                .addComponent(editNamaButton))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(labelUsername)
-                                    .addComponent(labelNoHp))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(editNoHpButton, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(editUsernameButton, javax.swing.GroupLayout.Alignment.TRAILING)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(labelPass)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(editPasswordButton)))))
-                .addGap(51, 51, 51))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                                .addGap(175, 175, 175)
+                                                .addComponent(jLabel1))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                                .addGap(49, 49, 49)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(jLabel6)
+                                                        .addComponent(jLabel2)
+                                                        .addComponent(jLabel3)
+                                                        .addComponent(jLabel4)
+                                                        .addComponent(jLabel5)
+                                                        .addComponent(backButton))
+                                                .addGap(28, 28, 28)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(alamatLabel)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                                .addComponent(editAlamat))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(labelNama)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
+                                                                .addComponent(editNamaButton))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                        .addComponent(labelUsername)
+                                                                        .addComponent(labelNoHp))
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                        .addComponent(editNoHpButton, javax.swing.GroupLayout.Alignment.TRAILING)
+                                                                        .addComponent(editUsernameButton, javax.swing.GroupLayout.Alignment.TRAILING)))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(labelPass)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                                .addComponent(editPasswordButton)))))
+                                .addGap(51, 51, 51))
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(labelNama)
-                    .addComponent(editNamaButton))
-                .addGap(28, 28, 28)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(editNoHpButton)
-                    .addComponent(jLabel3)
-                    .addComponent(labelNoHp))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(labelUsername)
-                    .addComponent(editUsernameButton))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(alamatLabel)
-                    .addComponent(editAlamat))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(labelPass)
-                    .addComponent(editPasswordButton))
-                .addGap(18, 18, 18)
-                .addComponent(backButton)
-                .addGap(28, 28, 28))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jLabel1)
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jLabel2)
+                                        .addComponent(labelNama)
+                                        .addComponent(editNamaButton))
+                                .addGap(28, 28, 28)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(editNoHpButton)
+                                        .addComponent(jLabel3)
+                                        .addComponent(labelNoHp))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jLabel4)
+                                        .addComponent(labelUsername)
+                                        .addComponent(editUsernameButton))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jLabel6)
+                                        .addComponent(alamatLabel)
+                                        .addComponent(editAlamat))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jLabel5)
+                                        .addComponent(labelPass)
+                                        .addComponent(editPasswordButton))
+                                .addGap(18, 18, 18)
+                                .addComponent(backButton)
+                                .addGap(28, 28, 28))
         );
 
         pack();
@@ -231,10 +231,10 @@ public class Profile extends javax.swing.JFrame {
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         // TODO add your handling code here:
-            MainPage mainPage = new MainPage();
-            mainPage.setVisible(true); // Menampilkan MainPage
-            this.dispose();
-        
+        MainPage mainPage = new MainPage();
+        mainPage.setVisible(true); // Menampilkan MainPage
+        this.dispose();
+
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void editAlamatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editAlamatActionPerformed
@@ -242,174 +242,191 @@ public class Profile extends javax.swing.JFrame {
         editAlamat();
     }//GEN-LAST:event_editAlamatActionPerformed
     public void display() {
-    setTitle("Profile Page");
+        setTitle("Profile Page");
 //    setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 //    PopupMenu contentPane = null;
 //    getContentPane().add(contentPane);
 //    pack();
 //    setLocationRelativeTo(null);
-    setVisible(true);
-}
-    
+        setVisible(true);
+    }
+
     private void getUserData() {
-    String loggedInUsername = Authentication.getLoggedInUsername(); // Get the logged-in username
+        String loggedInUsername = Authentication.getLoggedInUsername(); // Get the logged-in username
 
-    if (loggedInUsername == null || loggedInUsername.isEmpty()) {
-        JOptionPane.showMessageDialog(this, "No logged-in user", "Error", JOptionPane.ERROR_MESSAGE);
-        return;
-    }
-
-    String query = "SELECT * FROM user WHERE username = ?";
-    System.out.println("Executing query: " + query + " with username: " + loggedInUsername);
-
-    try {
-        PreparedStatement pst = conn.prepareStatement(query);
-        pst.setString(1, loggedInUsername);
-
-        ResultSet rs = pst.executeQuery();
-        if (rs.next()) {
-            username = rs.getString("username");
-            nama = rs.getString("nama");
-            alamat = rs.getString("alamat");
-            noHp = rs.getString("no_hp");
-            password = rs.getString("password");  // Consider not displaying password
-
-            // Update labels with retrieved data
-            labelNama.setText(nama);
-            labelNoHp.setText(noHp);
-            labelUsername.setText(username);
-            labelPass.setText("");
-            alamatLabel.setText(alamat);
-        } else {
-            JOptionPane.showMessageDialog(this, "Failed to retrieve user data", "Error", JOptionPane.ERROR_MESSAGE);
+        if (loggedInUsername == null || loggedInUsername.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "No logged-in user", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
         }
-    } catch (SQLException ex) {
-        JOptionPane.showMessageDialog(this, "Database error: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-    }
-}
-    private void editUsername() {
-    String newUsername = JOptionPane.showInputDialog(this, "Enter new username:", username);
 
-    if (newUsername != null && !newUsername.trim().isEmpty()) {
-        String updateQuery = "UPDATE user SET username = ? WHERE username = ?";
+        String query = "SELECT * FROM user WHERE username = ?";
+        System.out.println("Executing query: " + query + " with username: " + loggedInUsername);
+
         try {
-            PreparedStatement pst = conn.prepareStatement(updateQuery);
-            pst.setString(1, newUsername);
-            pst.setString(2, username);
+            PreparedStatement pst = conn.prepareStatement(query);
+            pst.setString(1, loggedInUsername);
 
-            int rowsAffected = pst.executeUpdate();
-            if (rowsAffected > 0) {
-                JOptionPane.showMessageDialog(this, "Username updated successfully");
-                username = newUsername;
-                jLabel5.setText(username);
-            } else {
-                JOptionPane.showMessageDialog(this, "Failed to update username", "Error", JOptionPane.ERROR_MESSAGE);
-            }
-        } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(this, "Database error: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-        }
-    }
-}
+            ResultSet rs = pst.executeQuery();
+            if (rs.next()) {
+                username = rs.getString("username");
+                nama = rs.getString("nama");
+                alamat = rs.getString("alamat");
+                noHp = rs.getString("no_hp");
+                password = rs.getString("password");  // Consider not displaying password
 
-private void editNama() {
-    String newNama = JOptionPane.showInputDialog(this, "Enter new nama:", nama);
-
-    if (newNama != null && !newNama.trim().isEmpty()) {
-        String updateQuery = "UPDATE user SET nama = ? WHERE username = ?";
-        try {
-            PreparedStatement pst = conn.prepareStatement(updateQuery);
-            pst.setString(1, newNama);
-            pst.setString(2, username);
-
-            int rowsAffected = pst.executeUpdate();
-            if (rowsAffected > 0) {
-                JOptionPane.showMessageDialog(this, "Nama updated successfully");
-                nama = newNama;
+                // Update labels with retrieved data
                 labelNama.setText(nama);
-            } else {
-                JOptionPane.showMessageDialog(this, "Failed to update nama", "Error", JOptionPane.ERROR_MESSAGE);
-            }
-        } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(this, "Database error: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-        }
-    }
-}
-
-private void editAlamat() {
-    String newAlamat = JOptionPane.showInputDialog(this, "Enter new alamat:", alamat);
-
-    if (newAlamat != null && !newAlamat.trim().isEmpty()) {
-        String updateQuery = "UPDATE user SET alamat = ? WHERE username = ?";
-        try {
-            PreparedStatement pst = conn.prepareStatement(updateQuery);
-            pst.setString(1, newAlamat);
-            pst.setString(2, username);
-
-            int rowsAffected = pst.executeUpdate();
-            if (rowsAffected > 0) {
-                JOptionPane.showMessageDialog(this, "Alamat updated successfully");
-                alamat = newAlamat;
-                labelNama.setText(alamat);
-            } else {
-                JOptionPane.showMessageDialog(this, "Failed to update alamat", "Error", JOptionPane.ERROR_MESSAGE);
-            }
-        } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(this, "Database error: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-        }
-    }
-}
-
-private void editNoHp() {
-    String newNoHp = JOptionPane.showInputDialog(this, "Enter new No. HP:", noHp);
-
-    if (newNoHp != null && !newNoHp.trim().isEmpty()) {
-        String updateQuery = "UPDATE user SET no_hp = ? WHERE username = ?";
-        try {
-            PreparedStatement pst = conn.prepareStatement(updateQuery);
-            pst.setString(1, newNoHp);
-            pst.setString(2, username);
-
-            int rowsAffected = pst.executeUpdate();
-            if (rowsAffected > 0) {
-                JOptionPane.showMessageDialog(this, "No. HP updated successfully");
-                noHp = newNoHp;
                 labelNoHp.setText(noHp);
+                labelUsername.setText(username);
+                labelPass.setText("");
+                alamatLabel.setText(alamat);
             } else {
-                JOptionPane.showMessageDialog(this, "Failed to update No. HP", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Failed to retrieve user data", "Error", JOptionPane.ERROR_MESSAGE);
             }
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(this, "Database error: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
-}
+    private void editUsername() {
+        String newUsername = JOptionPane.showInputDialog(this, "Enter new username:", username);
 
-private void editPassword() {
-    JPasswordField pf = new JPasswordField();
-    int okCxl = JOptionPane.showConfirmDialog(this, pf, "Enter new password", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
-
-    if (okCxl == JOptionPane.OK_OPTION) {
-        String newPassword = new String(pf.getPassword());
-
-        if (newPassword != null && !newPassword.trim().isEmpty()) {
-            String updateQuery = "UPDATE user SET password = ? WHERE username = ?";
+        if (newUsername != null && !newUsername.trim().isEmpty()) {
+            String updateQuery = "UPDATE user SET username = ? WHERE username = ?";
             try {
                 PreparedStatement pst = conn.prepareStatement(updateQuery);
-                pst.setString(1, newPassword);
+                pst.setString(1, newUsername);
                 pst.setString(2, username);
 
                 int rowsAffected = pst.executeUpdate();
                 if (rowsAffected > 0) {
-                    JOptionPane.showMessageDialog(this, "Password updated successfully");
-                    password = newPassword;
+                    JOptionPane.showMessageDialog(this, "Username updated successfully");
+                    username = newUsername;
+                    labelUsername.setText(username);
                 } else {
-                    JOptionPane.showMessageDialog(this, "Failed to update password", "Error", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(this, "Failed to update username", "Error", JOptionPane.ERROR_MESSAGE);
                 }
             } catch (SQLException ex) {
                 JOptionPane.showMessageDialog(this, "Database error: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
             }
         }
     }
-}
+
+    private void editNama() {
+        String newNama = JOptionPane.showInputDialog(this, "Enter new nama:", nama);
+
+        if (newNama != null && !newNama.trim().isEmpty()) {
+            String updateQuery = "UPDATE user SET nama = ? WHERE username = ?";
+            try {
+                PreparedStatement pst = conn.prepareStatement(updateQuery);
+                pst.setString(1, newNama);
+                pst.setString(2, username);
+
+                int rowsAffected = pst.executeUpdate();
+                if (rowsAffected > 0) {
+                    JOptionPane.showMessageDialog(this, "Nama updated successfully");
+                    nama = newNama;
+                    labelNama.setText(nama);
+                } else {
+                    JOptionPane.showMessageDialog(this, "Failed to update nama", "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            } catch (SQLException ex) {
+                JOptionPane.showMessageDialog(this, "Database error: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+            }
+        }
+    }
+
+    private void editAlamat() {
+        String newAlamat = JOptionPane.showInputDialog(this, "Enter new alamat:", alamat);
+
+        if (newAlamat != null && !newAlamat.trim().isEmpty()) {
+            String updateQuery = "UPDATE user SET alamat = ? WHERE username = ?";
+            try {
+                PreparedStatement pst = conn.prepareStatement(updateQuery);
+                pst.setString(1, newAlamat);
+                pst.setString(2, username);
+
+                int rowsAffected = pst.executeUpdate();
+                if (rowsAffected > 0) {
+                    JOptionPane.showMessageDialog(this, "Alamat updated successfully");
+                    alamat = newAlamat;
+                    alamatLabel.setText(alamat);
+                } else {
+                    JOptionPane.showMessageDialog(this, "Failed to update alamat", "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            } catch (SQLException ex) {
+                JOptionPane.showMessageDialog(this, "Database error: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+            }
+        }
+    }
+
+    private void editNoHp() {
+        String newNoHp = JOptionPane.showInputDialog(this, "Enter new No. HP:", noHp);
+
+        if (newNoHp != null && !newNoHp.trim().isEmpty()) {
+            String updateQuery = "UPDATE user SET no_hp = ? WHERE username = ?";
+            try {
+                PreparedStatement pst = conn.prepareStatement(updateQuery);
+                pst.setString(1, newNoHp);
+                pst.setString(2, username);
+
+                int rowsAffected = pst.executeUpdate();
+                if (rowsAffected > 0) {
+                    JOptionPane.showMessageDialog(this, "No. HP updated successfully");
+                    noHp = newNoHp;
+                    labelNoHp.setText(noHp);
+                } else {
+                    JOptionPane.showMessageDialog(this, "Failed to update No. HP", "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            } catch (SQLException ex) {
+                JOptionPane.showMessageDialog(this, "Database error: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+            }
+        }
+    }
+
+    private void editPassword() {
+        JPasswordField pf = new JPasswordField();
+        int okCxl = JOptionPane.showConfirmDialog(this, pf, "Enter new password", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
+
+        if (okCxl == JOptionPane.OK_OPTION) {
+            String newPassword = new String(pf.getPassword());
+
+            if (newPassword != null && !newPassword.trim().isEmpty()) {
+                String updateQuery = "UPDATE user SET password = ? WHERE username = ?";
+                try {
+                    PreparedStatement pst = conn.prepareStatement(updateQuery);
+                    pst.setString(1, newPassword);
+                    pst.setString(2, username);
+
+                    int rowsAffected = pst.executeUpdate();
+                    if (rowsAffected > 0) {
+                        JOptionPane.showMessageDialog(this, "Password updated successfully");
+                        password = newPassword;
+                    } else {
+                        JOptionPane.showMessageDialog(this, "Failed to update password", "Error", JOptionPane.ERROR_MESSAGE);
+                    }
+                } catch (SQLException ex) {
+                    JOptionPane.showMessageDialog(this, "Database error: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        }
+    }
+
+    public String getNama(){
+        return labelNama.getText();
+    }
+
+    public String getNoHp(){
+        return labelNoHp.getText();
+    }
+
+    public String getUsername(){
+        return labelUsername.getText();
+    }
+
+    public String getAlamat(){
+        return alamatLabel.getText();
+    }
+
     /**
      * @param args the command line arguments
      */
@@ -417,7 +434,7 @@ private void editPassword() {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
